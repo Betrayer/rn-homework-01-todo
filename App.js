@@ -12,7 +12,7 @@ import {
 } from "react-native";
 
 class App extends Component {
-  state = { note: [], text: "", priority: "green" };
+  state = { note: [], text: "", priority: "" };
 
   changeTextHandler = (text) => {
     this.setState({ text: text });
@@ -23,7 +23,7 @@ class App extends Component {
       {
         text: "High",
         onPress: () =>
-          //   this.setState({ priority: "red", text: this.state.text }),
+            // this.setState({ priority: "red", text: this.state.text }),
           this.setState({ priority: "red" }),
         style: "cancel",
       },
@@ -179,5 +179,6 @@ const styles = StyleSheet.create({
     height: 50,
     flexDirection: "column",
     justifyContent: "center",
+    backgroundColor: 'black'
   },
 });
